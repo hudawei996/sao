@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CoolView">
+        <attr name="speed" format="float"></attr>
+        <attr name="border_width" format="dimension"></attr>
+        <attr name="radius" format="dimension"></attr>
+        <attr name="colors" format="reference"></attr>
+    </declare-styleable>
+</resources>
