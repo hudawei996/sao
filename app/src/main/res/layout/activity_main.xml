@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="80dp"
+                android:src="@mipmap/icon_logo" />
+
+            <LinearLayout
+                android:id="@+id/always"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center_vertical"
+                android:padding="10dp">
+
+                <com.wanjian.sao.CoolView
+                    android:id="@+id/always_marquee"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginRight="10dp"></com.wanjian.sao.CoolView>
+
+                <com.wanjian.sao.YuanTiTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="始终显示"
+                    android:textColor="#666" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/notification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:padding="10dp">
+
+                <com.wanjian.sao.CoolView
+                    android:id="@+id/notification_marquee"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginRight="10dp"
+                    android:visibility="invisible"></com.wanjian.sao.CoolView>
+
+                <com.wanjian.sao.YuanTiTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="紧有通知时显示"
+                    android:textColor="#666" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="bottom|center_horizontal"
+                android:orientation="vertical">
+
+                <com.wanjian.sao.YuanTiTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:text="你需要去设置中开启悬浮窗权限，否则无法显示跑马灯"
+                    android:textColor="#999"
+                    android:textSize="12sp" />
+
+                <com.wanjian.sao.YuanTiTextView
+                    android:id="@+id/reward"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="bottom"
+                    android:text="我要打赏"
+                    android:textColor="#999"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>
