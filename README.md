@@ -27,3 +27,4 @@
 [视频链接](https://raw.githubusercontent.com/android-notes/sao/master/sao.mov)
 
  
+[安装包下载](https://raw.githubusercontent.com/android-notes/sao/master/sao%E5%AE%89%E8%A3%85%E5%8C%85.apk)
