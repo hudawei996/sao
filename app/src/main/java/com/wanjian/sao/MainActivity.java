@@ -168,4 +168,9 @@ public class MainActivity extends AppCompatActivity {
 
         return accessibilityFound;
     }
+
+    @Override
+    public void finish() {
+        moveTaskToBack(true);
+    }
 }
